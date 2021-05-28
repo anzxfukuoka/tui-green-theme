@@ -1,0 +1,25 @@
+
+
+java.lang.SecurityException: Permission Denial: startForeground from pid=16660, uid=10767 requires android.permission.FOREGROUND_SERVICE
+	at android.os.Parcel.createException(Parcel.java:2088)
+	at android.os.Parcel.readException(Parcel.java:2056)
+	at android.os.Parcel.readException(Parcel.java:2004)
+	at android.app.IActivityManager$Stub$Proxy.setServiceForeground(IActivityManager.java:6880)
+	at android.app.Service.startForeground(Service.java:707)
+	at ohi.andre.consolelauncher.managers.music.MusicService.onPrepared(Unknown Source:33)
+	at android.media.MediaPlayer$EventHandler.handleMessage(MediaPlayer.java:4118)
+	at android.os.Handler.dispatchMessage(Handler.java:107)
+	at android.os.Looper.loop(Looper.java:237)
+	at android.app.ActivityThread.main(ActivityThread.java:7814)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1075)
+Caused by: android.os.RemoteException: Remote stack trace:
+	at com.android.server.am.ActivityManagerService.enforcePermission(ActivityManagerService.java:7334)
+	at com.android.server.am.ActiveServices.setServiceForegroundInnerLocked(ActiveServices.java:1364)
+	at com.android.server.am.ActiveServices.setServiceForegroundLocked(ActiveServices.java:1015)
+	at com.android.server.am.ActivityManagerService.setServiceForeground(ActivityManagerService.java:16125)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:3150)
+
+
+----------------------------

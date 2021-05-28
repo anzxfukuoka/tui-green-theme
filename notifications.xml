@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NOTIFICATIONS>
+<show_notifications value="true"/>
+<app_notification_enabled_default value="true"/>
+<notification_format value="[%app] %ttl - %txt"/>
+<default_notification_color value="#FEFDFD"/>
+<click_notification value="true"/>
+<long_click_notification value="true"/>
+<notification_popup_exclude_app value="true"/>
+<notification_popup_exclude_notification value="true"/>
+<notification_popup_reply value="true"/>
+<android enabled="false"/>
+<com.android.systemui enabled="false"/>
+</NOTIFICATIONS>
