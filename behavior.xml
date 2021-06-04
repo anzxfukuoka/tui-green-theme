@@ -10,7 +10,7 @@
 
 <tui_notification value="false"/>
 
-<auto_show_keyboard value="true"/>
+<auto_show_keyboard value="false"/>
 <auto_scroll value="true"/>
 
 <show_hints value="true"/>
@@ -18,7 +18,7 @@
 <show_launch_history value="true"/>
 
 <clear_after_cmds value="-1"/>
-<clear_after_seconds value="-1"/>
+<clear_after_seconds value="120"/>
 <max_lines value="-1"/>
 
 <time_format value="HH:mm@"/>
@@ -37,7 +37,7 @@ Storage: %iavgb GB / %itotgb GB (%iav%%)
 -->
 
 <ram_format value="RAM: %avgb / %totgb GB (%av%%)"/>
-<battery_format value="%(&#9650;/)%v%"/>
+<battery_format value="%(▲/)%v%"/>
 <storage_format value="MEM: %iavgb / %itotgb GB (%iav%%)"/>
 <network_info_format value="%(LAN: %ip4/%[NET: %dt/No Internet access])"/>
 
