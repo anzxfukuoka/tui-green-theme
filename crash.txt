@@ -1,16 +1,29 @@
 
 
-java.lang.IllegalArgumentException: Comparison method violates its general contract!
-	at java.util.TimSort.mergeLo(TimSort.java:777)
-	at java.util.TimSort.mergeAt(TimSort.java:514)
-	at java.util.TimSort.mergeCollapse(TimSort.java:441)
-	at java.util.TimSort.sort(TimSort.java:245)
-	at java.util.Arrays.sort(Arrays.java:1424)
-	at it.andreuzzi.comparestring2.CompareObjects.a(Unknown Source:63)
-	at it.andreuzzi.comparestring2.CompareObjects.a(Unknown Source:6)
-	at ohi.andre.consolelauncher.managers.suggestions.i.c(Unknown Source:129)
-	at ohi.andre.consolelauncher.managers.suggestions.i.a(Unknown Source:34)
-	at ohi.andre.consolelauncher.managers.suggestions.i.a(Unknown Source:360)
-	at ohi.andre.consolelauncher.managers.suggestions.h.run(Unknown Source:68)
+java.lang.RuntimeException: Unable to destroy activity {ohi.andre.consolelauncher/ohi.andre.consolelauncher.LauncherActivity}: java.lang.IllegalArgumentException: Receiver not registered: ohi.andre.consolelauncher.tuils.q@8e62ca4
+	at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:5193)
+	at android.app.ActivityThread.handleDestroyActivity(ActivityThread.java:5227)
+	at android.app.servertransaction.DestroyActivityItem.execute(DestroyActivityItem.java:44)
+	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:176)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:97)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2147)
+	at android.os.Handler.dispatchMessage(Handler.java:107)
+	at android.os.Looper.loop(Looper.java:237)
+	at android.app.ActivityThread.main(ActivityThread.java:7814)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1075)
+Caused by: java.lang.IllegalArgumentException: Receiver not registered: ohi.andre.consolelauncher.tuils.q@8e62ca4
+	at android.app.LoadedApk.forgetReceiverDispatcher(LoadedApk.java:1499)
+	at android.app.ContextImpl.unregisterReceiver(ContextImpl.java:1604)
+	at android.content.ContextWrapper.unregisterReceiver(ContextWrapper.java:678)
+	at ohi.andre.consolelauncher.tuils.s.g(Unknown Source:4)
+	at ohi.andre.consolelauncher.y.c(Unknown Source:43)
+	at ohi.andre.consolelauncher.LauncherActivity.n(Unknown Source:97)
+	at ohi.andre.consolelauncher.LauncherActivity.onDestroy(Unknown Source:3)
+	at android.app.Activity.performDestroy(Activity.java:8217)
+	at android.app.Instrumentation.callActivityOnDestroy(Instrumentation.java:1342)
+	at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:5178)
+	... 11 more
 
 ----------------------------
